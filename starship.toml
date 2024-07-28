@@ -17,7 +17,8 @@ $nodejs\
 $python\
 $rust\
 $golang\
-[](bg:magenta fg:cyan)\
+[](bg:blue fg:cyan)\
+[](bg:magenta fg:blue)\
 [](bg:black fg:magenta)
 $character\
 """
@@ -115,40 +116,34 @@ style = "bg:green fg:black"
 format = "[$all_status$ahead_behind ]($style)"
 
 [java]
-symbol = " "
-style = "bg:magenta fg:black"
-format = "[ $symbol ]($style)"
+style = "bg:cyan fg:black"
+format = "[ JAVA ($version) ]($style)"
 
 [kotlin]
-symbol = ""
-style = "bg:magenta fg:black"
-format = "[ $symbol ]($style)"
+style = "bg:cyan fg:black"
+format = "[ Kotlin ($version) ]($style)"
 
 [nodejs]
-symbol = ""
-style = "bg:magenta fg:black"
-format = "[ $symbol ]($style)"
+style = "bg:cyan fg:black"
+format = "[ NodeJS ($version) ]($style)"
 
 [python]
-symbol = ""
-style = "bg:magenta fg:black"
-format = "[ $symbol ]($style)"
+style = "bg:cyan fg:black"
+format = "[ Python ($version) ]($style)"
 
 [rust]
-symbol = ""
-style = "bg:magenta fg:black"
-format = "[ $symbol ]($style)"
+style = "bg:cyan fg:black"
+format = "[ Rust ($version) ]($style)"
 
 [golang]
-symbol = ""
-style = "bg:magenta fg:black"
-format = "[ $symbol ]($style)"
+style = "bg:cyan fg:black"
+format = "[ GO ($version) ]($style)"
 
 [time]
 disabled = false
-time_format = "%R"
-style = "bg:magenta fg:black"
-format = "[  $time ]($style)"
+time_format = "%r"
+style = "bg:black fg:white"
+format = "[ $time ]($style)"
 
 [cmd_duration]
-format = "[$duration]($style)"
+format = "[$duration ]($style)"
