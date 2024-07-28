@@ -10,6 +10,7 @@ $directory\
 [](bg:green fg:yellow)\
 $git_branch\
 $git_status\
+[ ](bg:green)\
 [](bg:cyan fg:green)\
 $java\
 $kotlin\
@@ -18,13 +19,14 @@ $python\
 $rust\
 $golang\
 [](bg:blue fg:cyan)\
+$cmd_duration\
 [](bg:magenta fg:blue)\
 [](bg:black fg:magenta)
 $character\
 """
 
 right_format = """
-$cmd_duration\
+[](bg:black bold fg:yellow)
 """
 
 palette = 'oceanic_next'
@@ -65,7 +67,7 @@ bright-white = '#C0C5CE'
 
 [os]
 disabled = false
-style = "bg:red fg:black"
+style = "bg:red bold fg:black"
 
 [os.symbols]
 Windows = "󰍲"
@@ -90,14 +92,14 @@ RedHatEnterprise = "󱄛"
 
 [username]
 show_always = true
-style_user = "bg:red fg:black"
+style_user = "bg:red bold fg:black"
 format = "[ $user ]($style)"
 
 [directory]
-style = "bg:yellow fg:black"
+style = "bg:yellow bold fg:black"
 format = "[ $path ]($style)"
 truncation_length = 3
-truncation_symbol = "… /"
+truncation_symbol = "…/"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
@@ -108,36 +110,39 @@ truncation_symbol = "… /"
 
 [git_branch]
 symbol = ""
-style = "bg:green fg:black"
-format = "[ $symbol $branch ]($style)"
+style = "bg:green bold fg:black"
+format = "[ $symbol $branch]($style)"
 
 [git_status]
-style = "bg:green fg:black"
-format = "[$all_status$ahead_behind ]($style)"
+style = "bg:green bold fg:red"
+format = "[$all_status$ahead_behind]($style)"
 
 [java]
-style = "bg:cyan fg:black"
-format = "[ JAVA ($version) ]($style)"
+style = "bg:cyan bold fg:black"
+format = "[ JAVA[-](dimmed $style)($version) ]($style)"
 
 [kotlin]
-style = "bg:cyan fg:black"
-format = "[ Kotlin ($version) ]($style)"
+style = "bg:cyan bold fg:black"
+format = "[ Kotlin[-](dimmed $style)($version) ]($style)"
 
 [nodejs]
-style = "bg:cyan fg:black"
-format = "[ NodeJS ($version) ]($style)"
+style = "bg:cyan bold fg:black"
+format = "[ NodeJS[-](dimmed $style)($version) ]($style)"
 
 [python]
-style = "bg:cyan fg:black"
-format = "[ Python ($version) ]($style)"
+style = "bg:cyan bold fg:black"
+format = "[ Python[-](dimmed $style)($version) ]($style)"
 
 [rust]
-style = "bg:cyan fg:black"
-format = "[ Rust ($version) ]($style)"
+style = "bg:cyan bold fg:black"
+format = "[ Rust[-](dimmed $style)($version) ]($style)"
 
 [golang]
-style = "bg:cyan fg:black"
-format = "[ GO ($version) ]($style)"
+style = "bg:cyan bold fg:black"
+format = "[ GO[-](dimmed $style)($version) ]($style)"
+
+[package]
+disabled = true
 
 [time]
 disabled = false
@@ -146,4 +151,5 @@ style = "bg:black fg:white"
 format = "[ $time ]($style)"
 
 [cmd_duration]
-format = "[$duration ]($style)"
+style = "bg:blue bold fg:yellow"
+format = "[ $duration ]($style)"
