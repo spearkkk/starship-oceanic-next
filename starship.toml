@@ -22,7 +22,8 @@ $golang\
 [](bg:blue fg:cyan)\
 $cmd_duration\
 [](bg:magenta fg:blue)\
-[](bg:black fg:magenta)
+[](bg:black fg:magenta)\
+$fill[---](bg:black fg:yellow)
 $character\
 """
 
@@ -99,15 +100,8 @@ format = "[ $user ]($style)"
 [directory]
 style = "bg:yellow bold fg:black"
 format = "[ $path ]($style)"
-truncation_length = 3
 truncation_symbol = "…/"
-
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = "󰝚 "
-"Pictures" = " "
-"Developer" = "󰲋 "
+truncation_length = 6
 
 [git_branch]
 symbol = ""
@@ -154,3 +148,7 @@ format = "[ $time ]($style)"
 [cmd_duration]
 style = "bg:blue bold fg:yellow"
 format = "[ $duration ]($style)"
+
+[fill]
+symbol = " "
+style = "bg:black fg:black"
