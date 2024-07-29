@@ -2,9 +2,10 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](bg:black fg:red)\
-[](bg:red fg:red)\
+[](bg:red fg:red)\
 $os\
+[](bg:black fg:red)\
+[](bg:red fg:black)\
 $username\
 [](bg:yellow fg:red)\
 $directory\
@@ -22,7 +23,7 @@ $golang\
 [](bg:blue fg:cyan)\
 $cmd_duration\
 [](bg:magenta fg:blue)\
-[](bg:black fg:magenta)\
+[](bg:black fg:magenta)\
 $fill[---](bg:black fg:yellow)
 $character\
 """
