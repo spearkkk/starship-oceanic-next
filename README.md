@@ -11,11 +11,12 @@
 ### Theme with Oceanic Next Color for Starrrrrrrrship 🎨
 ![oceanic-next_color_theme_starship.png](./oceanic-next_color_theme_starship.png)
 
-### Install
+### How to Get This Nice Theme to My Machine?
 ```shell
    mkdir -p ~/.config && curl -o ~/.config/starship.toml \
    https://raw.githubusercontent.com/spearkkk/starship-oceanic-next/main/starship.toml
 ```
+Please back-up your `starship.toml` file before applying
 
 ### Thanks 🫰🏼
 
