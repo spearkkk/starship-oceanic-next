@@ -10,8 +10,9 @@
 
 <h3 align="center">
 Theme with Oceanic Next Color for Starrrrrrrrship 🎨 <br/>
-![oceanic-next_color_theme_starship.png](./oceanic-next_color_theme_starship.png)
 </h3>
+
+![oceanic-next_color_theme_starship.png](./oceanic-next_color_theme_starship.png)
 
 ### How to Get This Nice Theme to My Machine?
 ```shell
